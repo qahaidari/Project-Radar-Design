@@ -20,7 +20,7 @@ Below figure (Radar Design Project Slides by Tobias Chaloun, SS2019, Univeristy 
 
 ![Block diagram](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/block%20diagram.PNG)
 
-Below figure shows the signal processing chain.
+Below figure (Radar Design Project Slides by Tobias Chaloun, SS2019, Univeristy of Ulm) shows the signal processing chain.
 
 ![signal processing chain](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/signal%20processing%20chain.png)
 
