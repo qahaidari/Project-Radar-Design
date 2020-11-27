@@ -72,6 +72,46 @@ The figure shows the RTO oscilloscope used in this project for received radar si
 
 RTO samples IF signal from the mixer outputs. A trigger cable for synchronization between AWG and RTO is used. MATLAB is used for signal generation to AWG and processing the samples received from RTO.
 
+## Signal Generation/Processing
+In a FMCW radar, a chirp signal is transmitted and the reflected signal off the target is received by the radar network. A chirp has a frequency-time relationship which is shown in the below figure:
+
+![freq time relationship of chirp](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/freq%20time%20relationship%20of%20chirp.jpg)
+
+Below is a chirp signal in time domain:
+
+![chirp in time domain](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/chirp%20in%20time%20domain.jpg)
+
+The transmitted signal is received with a time delay <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\tau" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\tau" title="\tau" /></a> which is dependent on the target range based on the following equation:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\tau&space;=&space;\frac{2&space;R}{c}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tau&space;=&space;\frac{2&space;R}{c}" title="\tau = \frac{2 R}{c}" /></a>
+
+The received signal is mixed with the original transmit signal at the reciever side and the so-called beat frequency <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;f_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;f_B" title="f_B" /></a> of the IF signal can be determined by applying a one-dimensional FFT. The target range can then be determined using the following equation:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=f_B&space;=&space;\frac{2&space;B&space;R}{T_{chrip}&space;c}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_B&space;=&space;\frac{2&space;B&space;R}{T_{chrip}&space;c}" title="f_B = \frac{2 B R}{T_{chrip} c}" /></a>
+
+Below figure shows the transmit and receive signals of a single chirp [Figure by Christoph Schroeder, 2010] where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;f_{sweep}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;f_{sweep}" title="f_{sweep}" /></a> referes to the bandwidth of the signal.
+
+![transmit and receive signal](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/transmit%20and%20receive%20signal.png)
+
+Below figure shows the spectrum of IF signal resulting from a single chirp. The peak indicates the beat frequency.
+
+![spectrum of IF signal](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/spectrum%20of%20IF%20signal.jpg)
+
+And the below figure is the IF signal in time domain.
+
+![IF signal in time domain](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/IF%20signal%20in%20time%20domain.jpg)
+
+The target velocity cannot be determined with one single chirp. Multiple chirps are used for this purpose and a second FFT is applied over the chirps. By applying this 2D-FFT on the received signal resulting from multiple chirps, range-velocity (RV) characteristics can be plotted.
+
+We can set the sampling rate of RTO to 100MHz which is much higher than the IF range and enough for sampling it. This makes data acquisition and plotting faster as we have to process fewer samples. When taking one measurement, RTO freezes to sample data and send it to PC for further processing.
+
+Below shows the range plot of one chirp using 1DFFT. The peak indicates the target range.
+
+
+## Radar Network Components
+
+## References
+
 
 
 
