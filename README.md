@@ -101,12 +101,23 @@ And the below figure is the IF signal in time domain.
 
 ![IF signal in time domain](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/IF%20signal%20in%20time%20domain.jpg)
 
-The target velocity cannot be determined with one single chirp. Multiple chirps are used for this purpose and a second FFT is applied over the chirps. By applying this 2D-FFT on the received signal resulting from multiple chirps, range-velocity (RV) characteristics can be plotted.
+The target velocity cannot be determined with one single chirp. Multiple chirps are used for this purpose and a second FFT is applied over the chirps. By applying this 2D-FFT on the received signal resulting from multiple chirps, range-velocity (RV) characteristics can be plotted. Below figure shows this 2DFFT RV processing []. 
+
+![rv processing](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/rv%20processing.png)
 
 We can set the sampling rate of RTO to 100MHz which is much higher than the IF range and enough for sampling it. This makes data acquisition and plotting faster as we have to process fewer samples. When taking one measurement, RTO freezes to sample data and send it to PC for further processing.
 
 Below shows the range plot of one chirp using 1DFFT. The peak indicates the target range.
 
+![range plot](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/range%20plot.jpg)
+
+Below shows the spectrum of 64 chirps using 1DFFT.
+
+![spectrum of 64 chirps](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/spectrum%20of%2064%20chirps.jpg)
+
+Below shows the output of the mixer as well as the spectrum of the IF signal caputred on RTO.
+
+![mixer output and spectrum on RTO](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/Mixer%20output%20and%20spectrum%20on%20RTO.jpg)
 
 ## Radar Network Components
 
