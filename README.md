@@ -16,11 +16,11 @@ Signal synthesis and processing in a radar design project
 
 ## Radar Signal Processing Chain
 
-Below figure (Radar Design Project Slides by Tobias Chaloun, SS2019, Univeristy of Ulm) shows the block diagram of a typical radar system. I was involved in the signal synthesis and signal processing stages of the project.
+Below figure [1] shows the block diagram of a typical radar system. I was involved in the signal synthesis and signal processing stages of the project.
 
 ![Block diagram](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/block%20diagram.PNG)
 
-Below figure (Radar Design Project Slides by Tobias Chaloun, SS2019, Univeristy of Ulm) shows the signal processing chain.
+Below figure [1] shows the signal processing chain.
 
 ![signal processing chain](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/signal%20processing%20chain.png)
 
@@ -44,7 +44,7 @@ signal evaluation | range, velocity, RV plots
 
 ## Signal Synthesis using AWG
 
-The figure shows the AWG used in this project for generating the transmit power.
+The picture shows the AWG used in this project for generating the transmit power.
 
 ![AWG](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/AWG.jpg)
 
@@ -131,6 +131,7 @@ And the below picture shows the site measurement setup.
 ![final circuit 3](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/final%20circuit_3.JPG)
 
 ## References
+[1] T. Chaloun, “Radar Design Project," Lab notes, Ulm Univeristy, Institut of Microwave Engineering, SS2019.
 [1] V. Winkler, “Range Doppler Detection for Automotive FMCW Radars,” Proc. European Microwave Conference, pp. 1445–1448, Oct. 2007.
 [2] C. Schroeder and H. Rohling, “X-Band FMCW Radar System with Variable Chirp Duration,” Proc. IEEE Radar Conference, pp. 1255–1259, 2010.
 [3] Lecture 7 - The Discrete Fourier Transform.
