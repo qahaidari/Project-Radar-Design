@@ -120,11 +120,20 @@ Below shows the output of the mixer as well as the spectrum of the IF signal cap
 ![mixer output and spectrum on RTO](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/Mixer%20output%20and%20spectrum%20on%20RTO.jpg)
 
 ## Radar Network Components
+The below pictures show the network components assembled together.
+
+![final circuit 1](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/final%20circuit_1.jpg)
+
+![final circuit 2](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/final%20circuit_2.JPG)
+
+And the below picture shows the site measurement setup.
+
+![final circuit 3](https://github.com/qahaidari/Project-Radar-Design/blob/main/images/final%20circuit_3.JPG)
 
 ## References
-
-
-
-
-
-
+[1] V. Winkler, “Range Doppler Detection for Automotive FMCW Radars,” Proc. European Microwave Conference, pp. 1445–1448, Oct. 2007.
+[2] C. Schroeder and H. Rohling, “X-Band FMCW Radar System with Variable Chirp Duration,” Proc. IEEE Radar Conference, pp. 1255–1259, 2010.
+[3] Lecture 7 - The Discrete Fourier Transform.
+[4] M. A. Richards, Fundamentals of Radar Signal Processing. McGraw-Hill, 2005.
+[5] J. Fink and F. K. Jondral, “Comparison of OFDM Radar and Chrip Sequence Radar,” Communications Engineering Lab, Karlsruhe Institute of Technology, 2015.
+[6] G. M. Brooker, “Understanding Millimeter Wave FMCW Radars,” 1st International Conference on Sensing Technology, pp. 152–157, Nov. 2005.
